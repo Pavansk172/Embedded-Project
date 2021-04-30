@@ -1,7 +1,7 @@
 
 /**
  * @file act1.c
- * @author PAVAN KULKARNI (kubsadishwar@gmail.com)
+ * @author PAVAN KULKARNI (pavansk172@gmail.com)
  * @brief 
  * @version 0.1
  * @date 2021-04-28
@@ -20,9 +20,27 @@
 void Buttons_LED_Init()
 {
      /*Configure LED and Switch pins*/
-    DDRD|=(1<<PD6);
-    DDRD&=~(1<<PD0);
-    PORTD|=(1<<PD0);
-    DDRD&=~(1<<PD4);
-    PORTD|=(1<<PD4);
+    DDRB|=(1<<PB0);//setting PB0=1 for led
+    DDRD&=~(1<<PD0);//making it 0
+    PORTD|=(1<<PD0);//matching bit
+    DDRD&=~(1<<PD4);//making 0
+     PORTD|=(1<<PD4);//setting bit
+     while(1)
+     {
+         if(!(PIND&(1<<PD0)))
+         {
+             if(!(PIND&(1<<PD4)))
+             {
+                 PORTB|=(1<<PB0);
+             }
+             else
+                {
+                PORTB&=~(1<<PB0);
+             }
+         }
+         else
+            {
+            PORTB&=~(1<<PB0);
+         }
+     }
 }
