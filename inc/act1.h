@@ -1,6 +1,6 @@
 /**
  * @file act1.h
- * @author ISHWAR KUBASAD (you@domain.com)
+ * @author PAVAN KULKARNI (pavansk172@gmail.com.com)
  * @brief 
  * @version 0.1
  * @date 2021-04-28
