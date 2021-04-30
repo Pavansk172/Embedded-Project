@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef ACT3_H_INCLUDED
-#define ACT3_H_INCLUDED
+#ifndef ACTIVITY3_H_INCLUDED
+#define ACTIVITY3_H_INCLUDED
 
 #include <avr/io.h>
 #include <util/delay.h>
