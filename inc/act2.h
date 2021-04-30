@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2021
  * 
  */
-#ifndef ACT2_H_INCLUDED
-#define ACT2_H_INCLUDED
+#ifndef ACTIVITY2_H_INCLUDED
+#define ACTIVITY2_H_INCLUDED
 
 #include<avr/io.h>
 
